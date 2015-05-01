@@ -1,0 +1,4 @@
+dashboard_annotation:
+    type: rest
+    resource: "@KamranDashboardBundle/Controller"
+    type:     annotation

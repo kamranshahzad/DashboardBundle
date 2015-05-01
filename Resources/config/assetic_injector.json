@@ -1,0 +1,9 @@
+{
+    "require_all":
+    {
+        "javascripts":
+        {
+            "foot": "@KamranDashboardBundle/Resources/public/js/myapp.js"
+        }
+    }
+}

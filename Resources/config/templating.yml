@@ -1,0 +1,5 @@
+parameters:
+    kamran.dashboard.myhelper.class: Kamran\DashboardBundle\Templating\Helper\MyHelper
+    kamran.twig.myextension.class: Kamran\DashboardBundle\Twig\Extension\MyExtension
+services:
+

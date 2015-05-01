@@ -1,0 +1,176 @@
+<ul class="nav nav-bracket" style="margin-top: 20px; z-index: 99999999;">
+    <li class="" style="margin-bottom:3px;">
+        <a href="{{- path('tasker_index') -}}" >
+        <span class="fa-stack fa-lg fa-2x f-size-20" style="margin-bottom: 1px;">
+            <i class="fa fa-circle fa-stack-2x light-gray"></i>
+            <i class="fa fa-tasks fa-stack-1x fa-inverse dark-gray"></i>
+        </span>
+            <span>Task Manager</span>
+        </a>
+    </li>
+
+    <li class="" style="margin-bottom:3px;" style="margin-bottom: 1px;">
+        <a href="{{- path('snippets_index') -}}">
+        <span class="fa-stack fa-lg fa-2x f-size-20">
+            <i class="fa fa-circle fa-stack-2x light-gray"></i>
+            <i class="fa fa-archive fa-stack-1x fa-inverse dark-gray"></i>
+        </span>
+            <span>Code Snippets</span>
+        </a>
+    </li>
+
+    <li class="" style="margin-bottom:3px;" style="margin-bottom: 1px;">
+        <a href="{{ path('links_index') }}">
+        <span class="fa-stack fa-lg fa-2x f-size-20">
+            <i class="fa fa-circle fa-stack-2x light-gray"></i>
+            <i class="fa fa-link fa-stack-1x fa-inverse dark-gray"></i>
+        </span>
+            <span>Links Manager</span>
+        </a>
+    </li>
+</ul>
+
+
+<div class="space"></div>
+
+<!-- testmenu -->
+
+<ul class="nav nav-bracket">
+    <li class="">
+        <a href="{{ path('technology_index',{'tech_id':1}) }}">
+            <span class="geekicon">
+              <div class="app-circle b-color-1">
+                  <i class="front step icon-php-alt f-size-28 white"></i>
+              </div>
+            </span>
+            <span>PHP</span>
+        </a>
+        <ul class="children">
+            <li><a href="{{ path('technology_index',{'tech_id':2}) }}"><i class="fa fa-arrow-circle-right"></i> Symfony 2</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':3}) }}"><i class="fa fa-arrow-circle-right"></i> Silex</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':4}) }}"><i class="fa fa-arrow-circle-right"></i> Zend Framework 2</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':5}) }}"><i class="fa fa-arrow-circle-right"></i> Yii</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':6}) }}"><i class="fa fa-arrow-circle-right"></i> Laravel</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':7}) }}"><i class="fa fa-arrow-circle-right"></i> Phalcon </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':8}) }}"><i class="fa fa-arrow-circle-right"></i> CodeIgniter </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':9}) }}"><i class="fa fa-arrow-circle-right"></i> CakePHP </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':19}) }}"><i class="fa fa-arrow-circle-right"></i> Wordpress</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':20}) }}"><i class="fa fa-arrow-circle-right"></i> Magento</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':21}) }}"><i class="fa fa-arrow-circle-right"></i> Drupal</a></li>
+        </ul>
+    </li>
+    <li class="nav-parent">
+        <a href="{{ path('technology_index',{'tech_id':10}) }}">
+              <span class="geekicon">
+                  <div class="app-circle b-color-7">
+                      <i class="front icon-javascript f-size-28 white"></i>
+                  </div>
+              </span>
+            <span> JS (Javascript)</span>
+        </a>
+        <ul class="children">
+            <li><a href="{{ path('technology_index',{'tech_id':11}) }}"><i class="fa fa-arrow-circle-right"></i> Ext JS </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':12}) }}"><i class="fa fa-arrow-circle-right"></i> YUI</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':13}) }}"><i class="fa fa-arrow-circle-right"></i> JQuery</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':14}) }}"><i class="fa fa-arrow-circle-right"></i> PrototypeJS</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':15}) }}"><i class="fa fa-arrow-circle-right"></i> AngularJS </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':16}) }}"><i class="fa fa-arrow-circle-right"></i> Dart </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':17}) }}"><i class="fa fa-arrow-circle-right"></i> Backbone </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':18}) }}"><i class="fa fa-arrow-circle-right"></i> All Others </a></li>
+        </ul>
+    </li>
+    <li class="">
+        <a href="{{ path('technology_index',{'tech_id':22}) }}">
+            <span class="geekicon">
+              <div class="app-circle b-color-1">
+                  <i class="front step icon-css f-size-28 white"></i>
+              </div>
+            </span>
+            <span>CSS/HTML/Frameworks</span>
+        </a>
+        <ul class="children">
+            <li><a href="{{ path('technology_index',{'tech_id':23}) }}"><i class="fa fa-arrow-circle-right"></i> CSS3</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':24}) }}"><i class="fa fa-arrow-circle-right"></i> HTML5</a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':25}) }}"><i class="fa fa-arrow-circle-right"></i> LessCSS </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':26}) }}"><i class="fa fa-arrow-circle-right"></i> Sass </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':27}) }}"><i class="fa fa-arrow-circle-right"></i> Twitter Bootstrap </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':28}) }}"><i class="fa fa-arrow-circle-right"></i> Foundation CSS </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':29}) }}"><i class="fa fa-arrow-circle-right"></i> All Others </a></li>
+        </ul>
+    </li>
+    <li class="">
+        <a href="{{ path('technology_index',{'tech_id':30}) }}">
+            <span class="geekicon">
+              <div class="app-circle b-color-3">
+                  <i class="front step icon-iphone f-size-28 white"></i>
+              </div>
+            </span>
+            <span>Phone/Portable Devices</span>
+        </a>
+        <ul class="children">
+            <li><a href="{{ path('technology_index',{'tech_id':31}) }}"><i class="fa fa-arrow-circle-right"></i> Android </a></li>
+            <li><a href="{{ path('technology_index',{'tech_id':32}) }}"><i class="fa fa-arrow-circle-right"></i> PhoneGap</a></li>
+        </ul>
+    </li>
+    <li class="">
+        <a href="#">
+            <span class="geekicon">
+              <div class="app-circle b-color-5">
+                  <i class="front step icon-aws f-size-28 white"></i>
+              </div>
+            </span>
+            <span>Miscellaneous</span>
+        </a>
+        <ul class="children">
+            <li><a href="#"><i class="fa fa-arrow-circle-right"></i> Adobe Flash AS3 </a></li>
+            <li><a href="#"><i class="fa fa-arrow-circle-right"></i> Adobe Air </a></li>
+            <li><a href="#"><i class="fa fa-arrow-circle-right"></i> Adobe Flex </a></li>
+        </ul>
+    </li>
+    <li class="">
+        <a href="#">
+            <span class="geekicon">
+              <div class="app-circle b-color-6">
+                  <i class="front step icon-database f-size-28 white"></i>
+              </div>
+            </span>
+            <span>Databases</span>
+        </a>
+        <ul class="children">
+            <li><a href="#"><i class="fa fa-arrow-circle-right"></i> MySQL 5 </a></li>
+            <li><a href="#"><i class="fa fa-arrow-circle-right"></i> SQL Lite </a></li>
+            <li><a href="#"><i class="fa fa-arrow-circle-right"></i> MongoDB </a></li>
+        </ul>
+    </li>
+    <li class="">
+        <a href="#">
+            <span class="geekicon">
+              <div class="app-circle b-color-6">
+                  <i class="front step icon-ruby-on-rails-alt f-size-28 white"></i>
+              </div>
+            </span>
+            <span>Ruby/RubyonRails</span>
+        </a>
+    </li>
+
+    <li class="" style="margin:2px 0 3px;" >
+        <a href="#">
+            <span class="fa-stack fa-lg fa-1x f-size-20" style="margin-bottom: 1px;" ><i class="fa fa-circle fa-stack-2x f-color-5"></i><i class="fa fa-road fa-stack-1x fa-inverse"></i></span>
+            <span>Reputation/Promotions</span>
+        </a>
+    </li>
+    <li class="" style="margin-bottom:3px;">
+        <a href="#">
+            <span class="fa-stack fa-lg fa-1x f-size-20" style="margin-bottom: 1px;" ><i class="fa fa-circle fa-stack-2x f-color-5"></i><i class="fa fa-wrench fa-stack-1x fa-inverse"></i></span>
+            <span>Development /Workspace</span>
+        </a>
+    </li>
+    <li class="" style="margin-bottom:3px;">
+        <a href="#">
+            <span class="fa-stack fa-lg fa-1x f-size-20" style="margin-bottom: 1px;" ><i class="fa fa-circle fa-stack-2x f-color-5"></i><i class="fa fa-gears fa-stack-1x fa-inverse"></i></span>
+            <span>Workshop/Assets/Tools</span>
+        </a>
+    </li>
+
+</ul>
+<!-- @testmenu-->

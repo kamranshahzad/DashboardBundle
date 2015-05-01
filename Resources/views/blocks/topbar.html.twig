@@ -1,0 +1,130 @@
+<style>
+    .bog-menuoptions {padding: 10px;}
+    .nav-pills li a{ padding: 10px;}
+
+</style>
+
+
+<div class="row">
+
+    <div class="col-md-8">
+        <div class="bog-menuoptions">
+        <ul class="nav nav-pills">
+
+             <li class="dropdown">
+                <a href="">Peoples</a>
+             </li>  
+
+             <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  +Quicks <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Article</a></li>
+                    <li><a href="">Note</a></li>
+                </ul>
+             </li> 
+        </ul>
+        </div> <!--@bog-menuoptions -->
+    </div><!--@col -->
+
+    <div class="col-md-4">
+        <div class="user-controls">
+            <ul>
+                <li class="dropdown messages">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span id="user-new-messages" class="badge badge-red animated bounceIn">2</span> Kamran <strong>shahzad</strong> <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="profile-photo">
+                        <img alt="" src="{{ asset('assets/images/kamran-profile-photo.jpg') }}">
+                    </div>
+                    <ul class="dropdown-menu wide arrow red nopadding animated fadeInDown">
+                        <li><h1>You have <strong>2</strong> new messages</h1></li>
+
+                        <li>
+                            <a href="#" class="cyan">
+                                <div class="profile-photo">
+                                    <img alt="" src="{{ asset('assets/images/profile-photo-02.jpg') }}">
+                                </div>
+                                <div class="message-info">
+                                    <span class="sender">Jawad Khan</span>
+                                    <span class="time">12 mins</span>
+                                    <div class="message-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="green">
+                                <div class="profile-photo">
+                                    <img alt="" src="{{ asset('assets/images/profile-photo-02.jpg') }}">
+                                </div>
+                                <div class="message-info">
+                                    <span class="sender">Amin Jan</span>
+                                    <span class="time">1 hour</span>
+                                    <div class="message-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li><a href="#">Check all messages <i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown settings">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle options">
+                        <i class="fa fa-cog"></i>
+                    </a>
+
+                    <ul class="dropdown-menu arrow animated fadeInDown">
+
+                        <li>
+                            <h3>Settings</h3>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-user"></i> Reminders</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-user"></i> Metas</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-user"></i> Profile</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-envelope"></i> Inbox <span id="user-inbox" class="badge badge-red animated bounceIn">3</span></a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-power-off"></i> Logout</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div><!--@user-control-->
+
+    </div><!--@col -->    
+
+</div>    
+
+
+
+
+
+
+

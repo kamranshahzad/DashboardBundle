@@ -1,0 +1,12 @@
+
+parameters:
+  dashboard.bridge_connector.class: Kamran\DashboardBundle\BridgeConnector\DashboardBridge
+
+services:
+
+  # connect point to bridge
+  pi.dashboard_bridge.connector:
+    class: %dashboard.bridge_connector.class%
+    tags:
+      - { name: pi.bridge.connector , alias: dashboard.connector }
+
